@@ -1,0 +1,103 @@
+.mission-section {
+  background: url("your-image.jpg") no-repeat center center/cover;
+  width: 100%;
+  min-height: 400px;  /* adjust based on your design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Your mission-text overlay */
+.mission-text {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+  color: white;  /* makes text visible on dark overlay */
+  max-width: 90%;
+  padding: 40px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.p{
+     /* background-size: 100%;  */
+    /* max-height:100%;
+  display: flex;
+  object-fit: cover;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; */
+}
+.mission {
+  background: url("missi.jpg") no-repeat center center/cover;
+  width: 100%;
+  min-height: 400px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  /* text-align: center; */
+  /* color: #fff; */
+}
+
+.mission-text {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 900px;
+  font-size: 15px; 
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.mission h2 span {
+  color: #00a79d;
+  font-size: 100%;
+}
+
+.about {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.about h4 {
+  color: #00a79d;
+  margin-bottom: 10px;
+}
+
+.line-divider {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: #00a79d;
+  margin: 10px auto;
+}
+
+.about a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00a79d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-icons  a{
+  margin-right: 10px;
+  color: #00a79d;
+  font-size: 5px;
+}
+
+<section class="about">
+      <div class="text">
+        <h4>About Us</h4>
+        <span class="line-divider"></span>
+        <h2>We offer creative working environments that suit your business</h2>
+        <div class="More">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit torquent,
+          conubia leo rutrum praesent dui turpis lobortis.
+        </p>
+        <a href="#">More About Us</a>
+        </div>
+        </div>
+      </div>
+    </section>

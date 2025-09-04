@@ -1,0 +1,408 @@
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #fff;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00a79d;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #00a79d;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("./b.jpg") center/cover no-repeat;
+}
+
+.heading {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #fff;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.hero h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.hero h1 span {
+  color: #00a79d;
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #00a79d;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ========== Services ========== */
+.services {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 300px;
+  /* background: #fff; */
+  /* border-radius: 8px; */
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00a79d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ========== About Us ========== */
+.about {
+  padding: 60px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 11100px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+/* .about-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-right {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 2px solid #ddd; 
+} */
+/* 
+.text{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-right: 40%;
+} */
+.about h2{
+  font-size: 20px;
+}
+
+.about h4 {
+  color: #00a79d;
+  margin-bottom: 10px;
+}
+
+/* .line-divider {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+  height: 3px;
+  width: 50px;
+  background: #00a79d;
+  margin-left: 10px;
+  border-left: 1px solid black;
+} */
+/* .line-divider h2{
+  font-size: 20px;
+} */
+
+.line-divider{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  border-left: 1px solid black;
+  color: #00a79d;
+  font-weight: 600;
+  background-color: #00a79d;
+}
+
+.More {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  border-left: 1px solid black; 
+  color: #070707;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.link s{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* ========== Benefits Section ========== */
+.benefits {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.benefits h4 {
+  color: #00a79d;
+  margin-bottom: 10px;
+}
+
+.benefits-container {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* flex: 1; */
+  justify-items: center;
+  align-items: center;
+}
+
+.benefits-items {
+  background: #e6faf9;
+  
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+  height: 150px;
+  width: 200px;
+}
+.icon-container {
+  background-color: rgb(98, 152, 98);
+  padding: 2px;
+  border: 8px ;
+  border-radius:25px;
+  font-size: 10px;
+}
+.icon-text{
+  font-size: 19px;
+}
+.icon-p{
+  font-size: 10px;
+}
+.benefits-items img {
+  /* font-size: 10px; */
+  width: 25px;
+  height: 25px;
+  padding: 20%;
+
+}
+
+.image {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* ========== Mission Section ========== */
+.mission {
+  position: relative;
+  background: url("missi.jpg") no-repeat center center/cover;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); 
+  z-index: 1;
+}
+
+.mission-text {
+  position: relative;
+  z-index: 2;  
+  text-align: center;
+  width: 900px;
+  font-size: 15px; 
+  padding: 40px 20px;
+  border-radius: 8px;
+  background: transparent; 
+}
+
+.mission h2 span {
+  color: #00a79d;
+  font-size: 100%;
+}
+
+.mission-p{
+  font-size: 10px;
+}
+
+
+/* ========== Footer ========== */
+footer {
+  margin-top: 20px;
+  border-top: 1px solid green;
+  font-size: 14px;
+  background: #fff;
+  /* color: #fff; */
+  padding: 50px 30px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+}
+
+.footer-col a {
+  display: block;
+  margin-bottom: 10px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #00a79d;
+}
+
+.social-icons a{
+  gap: 10px;
+  color: #00a79d;
+}
+
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
